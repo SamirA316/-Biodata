@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import type { AppDispatch, RootState } from './store';
 import { fetchProfile } from './features/profileSlice';
 import { 
   User, Cake, MapPin, Ruler, IdCard, 
   GraduationCap, Users, Mail, Home, Map, 
-  Phone, AtSign, Heart, Loader, MessageCircle
+  Phone, Heart, Loader, MessageCircle
 } from 'lucide-react';
 import './index.css';
 
