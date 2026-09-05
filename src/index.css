@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-maroon: #7c1a2e; /* Deep elegant maroon */
+  --color-brand-gold: #b8935c;   /* Classic gold */
+  --color-paper-bg: #fffefa;     /* Off-white paper */
+  --color-page-bg: #f5f3ef;      /* Slightly darker background behind the paper */
+  --color-text-main: #2d3748;
+  --color-text-muted: #718096;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--color-text-main);
+  background: var(--color-page-bg);
+  background-image: radial-gradient(var(--color-brand-gold) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  background-position: 0 0;
+  /* Adds a subtle dot pattern to the background */
+}
+
+/* Elegant ornamental divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background-color: var(--color-brand-gold);
+}
+
+.ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-brand-maroon);
+  transform: rotate(45deg);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-page-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-gold); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-maroon); 
+}
